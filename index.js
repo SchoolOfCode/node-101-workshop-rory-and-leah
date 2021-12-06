@@ -23,7 +23,7 @@ let myCollection = [
   function describeItem (item){
   if (item === "School of Code pillow" && myCollection[2].count < 2){
     console.log ("I have a " + myCollection[2].name + " here's what I like about it: " + myCollection[2].whatILike);
-  }else if(item === "School of Code pillow" && myCollection[2].count > 2){
+  }else if(item === "School of Code pillow" && myCollection[2].count >= 2){
     console.log("I have " + myCollection[2].count + " " + myCollection[2].name + "s" + " here's what I like about them: " +myCollection[2].whatILike )
 
   }else if(item === "School of Code hat" && myCollection[1].count >= 2){
@@ -34,9 +34,10 @@ let myCollection = [
 
   }else if (item === "School of Code mug" && myCollection[0].count < 2){
     console.log ("I have a " + myCollection[0].name + " here's what I like about it: " + myCollection[0].whatILike);
-  }else if(item === "School of Code mug" && myCollection[0].count > 2){
+  }else if(item === "School of Code mug" && myCollection[0].count >= 2){
     console.log("I have " + myCollection[0].count + " " + myCollection[0].name + "s" + " here's what I like about them: " +myCollection[0].whatILike )
   }
 }
 
-describeItem("School of Code hat")
+describeItem("School of Code hat");
+
